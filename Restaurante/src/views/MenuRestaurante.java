@@ -21,7 +21,9 @@ public final class MenuRestaurante extends javax.swing.JFrame {
     public MenuRestaurante() {
         initComponents();
          SetImageLabel(etiPizza,"src/imagenes/pizza.jpeg");
-         SetImageLabel(PastasBolognesa,"src/imagenes/pastas.jpeg");
+         SetImageLabel(etiImangenBebidas,"src/imagenes/Limonada.jpg");
+          SetImageLabel(etiFondo,"src/imagenes/menu2.jpg");
+         
          
     }
     
@@ -38,37 +40,228 @@ public final class MenuRestaurante extends javax.swing.JFrame {
         jSpinner1 = new javax.swing.JSpinner();
         etiPizza = new javax.swing.JLabel();
         PizzaNapolitana = new javax.swing.JLabel();
+        precPizzaNapolitana = new javax.swing.JLabel();
+        signoPrecio = new javax.swing.JLabel();
+        etiImangenBebidas = new javax.swing.JLabel();
         jSpinner2 = new javax.swing.JSpinner();
-        PastasBolognesa = new javax.swing.JLabel();
-        AguaCristal = new javax.swing.JLabel();
-        jSpinner3 = new javax.swing.JSpinner();
+        PizzaMargherita = new javax.swing.JLabel();
+        precPizzaMargherita = new javax.swing.JLabel();
+        signoPrecio1 = new javax.swing.JLabel();
+        jSpinner4 = new javax.swing.JSpinner();
+        PizzaCapricciosa = new javax.swing.JLabel();
+        precPizzaCapricciosa = new javax.swing.JLabel();
+        signoPrecio2 = new javax.swing.JLabel();
+        jSpinner5 = new javax.swing.JSpinner();
+        PizzaFruttidimare = new javax.swing.JLabel();
+        precPizzaFruttidimare = new javax.swing.JLabel();
+        signoPrecio3 = new javax.swing.JLabel();
+        jSpinner6 = new javax.swing.JSpinner();
+        PizzaBoscaiola = new javax.swing.JLabel();
+        precPizzaBoscaiola = new javax.swing.JLabel();
+        signoPrecio4 = new javax.swing.JLabel();
+        jSpinner7 = new javax.swing.JSpinner();
+        etiLimonada = new javax.swing.JLabel();
+        precPizzaNapolitana5 = new javax.swing.JLabel();
+        signoPrecio5 = new javax.swing.JLabel();
+        jSpinner8 = new javax.swing.JSpinner();
+        etiCocala = new javax.swing.JLabel();
+        precPizzaNapolitana6 = new javax.swing.JLabel();
+        signoPrecio6 = new javax.swing.JLabel();
+        jSpinner9 = new javax.swing.JSpinner();
+        etiPepsi = new javax.swing.JLabel();
+        precPizzaNapolitana7 = new javax.swing.JLabel();
+        signoPrecio7 = new javax.swing.JLabel();
+        jSpinner10 = new javax.swing.JSpinner();
         etiAgua = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        precPizzaNapolitana8 = new javax.swing.JLabel();
+        signoPrecio8 = new javax.swing.JLabel();
+        jSpinner11 = new javax.swing.JSpinner();
+        etiAguamineral = new javax.swing.JLabel();
+        precPizzaNapolitana9 = new javax.swing.JLabel();
+        signoPrecio9 = new javax.swing.JLabel();
+        jSpinner12 = new javax.swing.JSpinner();
+        etiTelimon = new javax.swing.JLabel();
+        precPizzaNapolitana10 = new javax.swing.JLabel();
+        signoPrecio10 = new javax.swing.JLabel();
+        etiFctura = new javax.swing.JButton();
+        etiFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 420, 45, -1));
-        getContentPane().add(etiPizza, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 200, 120));
+        getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 360, 45, -1));
+        getContentPane().add(etiPizza, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 200, 120));
 
         PizzaNapolitana.setForeground(new java.awt.Color(255, 255, 255));
         PizzaNapolitana.setText("Pizza napolitana");
-        getContentPane().add(PizzaNapolitana, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 90, 20));
-        getContentPane().add(jSpinner2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 630, 50, -1));
+        getContentPane().add(PizzaNapolitana, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 90, 20));
 
-        PastasBolognesa.setForeground(new java.awt.Color(255, 255, 255));
-        PastasBolognesa.setText("Pastas Bolognesas");
-        getContentPane().add(PastasBolognesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 630, 90, -1));
+        precPizzaNapolitana.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        precPizzaNapolitana.setForeground(new java.awt.Color(255, 255, 255));
+        precPizzaNapolitana.setText("35000");
+        getContentPane().add(precPizzaNapolitana, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 40, 20));
 
-        AguaCristal.setForeground(new java.awt.Color(255, 255, 255));
-        AguaCristal.setText("Agua Cristal");
-        getContentPane().add(AguaCristal, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 420, 100, 20));
-        getContentPane().add(jSpinner3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 420, 50, -1));
+        signoPrecio.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        signoPrecio.setForeground(new java.awt.Color(255, 255, 255));
+        signoPrecio.setText("...$");
+        getContentPane().add(signoPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, -1, 20));
+        getContentPane().add(etiImangenBebidas, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 220, 200, 120));
+        getContentPane().add(jSpinner2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, 45, -1));
 
-        etiAgua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/agua.jpeg"))); // NOI18N
-        getContentPane().add(etiAgua, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 146, 210, 260));
+        PizzaMargherita.setForeground(new java.awt.Color(255, 255, 255));
+        PizzaMargherita.setText("Pizza margherita");
+        getContentPane().add(PizzaMargherita, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 90, 20));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/menu2.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 720));
+        precPizzaMargherita.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        precPizzaMargherita.setForeground(new java.awt.Color(255, 255, 255));
+        precPizzaMargherita.setText("37000");
+        getContentPane().add(precPizzaMargherita, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 400, 40, 20));
+
+        signoPrecio1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        signoPrecio1.setForeground(new java.awt.Color(255, 255, 255));
+        signoPrecio1.setText("...$");
+        getContentPane().add(signoPrecio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, -1, 20));
+        getContentPane().add(jSpinner4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 440, 45, -1));
+
+        PizzaCapricciosa.setForeground(new java.awt.Color(255, 255, 255));
+        PizzaCapricciosa.setText("Pizza capricciosa");
+        getContentPane().add(PizzaCapricciosa, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 90, 20));
+
+        precPizzaCapricciosa.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        precPizzaCapricciosa.setForeground(new java.awt.Color(255, 255, 255));
+        precPizzaCapricciosa.setText("42000");
+        getContentPane().add(precPizzaCapricciosa, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 440, 40, 20));
+
+        signoPrecio2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        signoPrecio2.setForeground(new java.awt.Color(255, 255, 255));
+        signoPrecio2.setText("...$");
+        getContentPane().add(signoPrecio2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 440, -1, 20));
+        getContentPane().add(jSpinner5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 480, 45, -1));
+
+        PizzaFruttidimare.setForeground(new java.awt.Color(255, 255, 255));
+        PizzaFruttidimare.setText("Pizza frutti di mare");
+        getContentPane().add(PizzaFruttidimare, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, 110, 20));
+
+        precPizzaFruttidimare.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        precPizzaFruttidimare.setForeground(new java.awt.Color(255, 255, 255));
+        precPizzaFruttidimare.setText("32000");
+        getContentPane().add(precPizzaFruttidimare, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 480, 40, 20));
+
+        signoPrecio3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        signoPrecio3.setForeground(new java.awt.Color(255, 255, 255));
+        signoPrecio3.setText("...$");
+        getContentPane().add(signoPrecio3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 480, -1, 20));
+        getContentPane().add(jSpinner6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 520, 45, -1));
+
+        PizzaBoscaiola.setForeground(new java.awt.Color(255, 255, 255));
+        PizzaBoscaiola.setText("Pizza boscaiola");
+        getContentPane().add(PizzaBoscaiola, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, 90, 20));
+
+        precPizzaBoscaiola.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        precPizzaBoscaiola.setForeground(new java.awt.Color(255, 255, 255));
+        precPizzaBoscaiola.setText("34000");
+        getContentPane().add(precPizzaBoscaiola, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 520, 40, 20));
+
+        signoPrecio4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        signoPrecio4.setForeground(new java.awt.Color(255, 255, 255));
+        signoPrecio4.setText("...$");
+        getContentPane().add(signoPrecio4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 520, -1, 20));
+        getContentPane().add(jSpinner7, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 400, 45, -1));
+
+        etiLimonada.setForeground(new java.awt.Color(255, 255, 255));
+        etiLimonada.setText("Limonada");
+        getContentPane().add(etiLimonada, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 400, 90, 20));
+
+        precPizzaNapolitana5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        precPizzaNapolitana5.setForeground(new java.awt.Color(255, 255, 255));
+        precPizzaNapolitana5.setText("15000");
+        getContentPane().add(precPizzaNapolitana5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 400, 40, 20));
+
+        signoPrecio5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        signoPrecio5.setForeground(new java.awt.Color(255, 255, 255));
+        signoPrecio5.setText("...$");
+        getContentPane().add(signoPrecio5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 400, -1, 20));
+        getContentPane().add(jSpinner8, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 440, 45, -1));
+
+        etiCocala.setForeground(new java.awt.Color(255, 255, 255));
+        etiCocala.setText("Coca cola");
+        getContentPane().add(etiCocala, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 440, 90, 20));
+
+        precPizzaNapolitana6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        precPizzaNapolitana6.setForeground(new java.awt.Color(255, 255, 255));
+        precPizzaNapolitana6.setText("12000");
+        getContentPane().add(precPizzaNapolitana6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 440, 40, 20));
+
+        signoPrecio6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        signoPrecio6.setForeground(new java.awt.Color(255, 255, 255));
+        signoPrecio6.setText("...$");
+        getContentPane().add(signoPrecio6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 440, -1, 20));
+        getContentPane().add(jSpinner9, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 480, 45, -1));
+
+        etiPepsi.setForeground(new java.awt.Color(255, 255, 255));
+        etiPepsi.setText("Pepsi");
+        getContentPane().add(etiPepsi, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 480, 90, 20));
+
+        precPizzaNapolitana7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        precPizzaNapolitana7.setForeground(new java.awt.Color(255, 255, 255));
+        precPizzaNapolitana7.setText("12000");
+        getContentPane().add(precPizzaNapolitana7, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 480, 40, 20));
+
+        signoPrecio7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        signoPrecio7.setForeground(new java.awt.Color(255, 255, 255));
+        signoPrecio7.setText("...$");
+        getContentPane().add(signoPrecio7, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 480, -1, 20));
+        getContentPane().add(jSpinner10, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 520, 45, -1));
+
+        etiAgua.setForeground(new java.awt.Color(255, 255, 255));
+        etiAgua.setText("Agua");
+        getContentPane().add(etiAgua, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 520, 90, 20));
+
+        precPizzaNapolitana8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        precPizzaNapolitana8.setForeground(new java.awt.Color(255, 255, 255));
+        precPizzaNapolitana8.setText("7000");
+        getContentPane().add(precPizzaNapolitana8, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 520, 40, 20));
+
+        signoPrecio8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        signoPrecio8.setForeground(new java.awt.Color(255, 255, 255));
+        signoPrecio8.setText("...$");
+        getContentPane().add(signoPrecio8, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 520, -1, 20));
+        getContentPane().add(jSpinner11, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 560, 45, -1));
+
+        etiAguamineral.setForeground(new java.awt.Color(255, 255, 255));
+        etiAguamineral.setText("Agua mineral");
+        getContentPane().add(etiAguamineral, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 560, 90, 20));
+
+        precPizzaNapolitana9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        precPizzaNapolitana9.setForeground(new java.awt.Color(255, 255, 255));
+        precPizzaNapolitana9.setText("8000");
+        getContentPane().add(precPizzaNapolitana9, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 560, 40, 20));
+
+        signoPrecio9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        signoPrecio9.setForeground(new java.awt.Color(255, 255, 255));
+        signoPrecio9.setText("...$");
+        getContentPane().add(signoPrecio9, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 560, -1, 20));
+        getContentPane().add(jSpinner12, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 360, 45, -1));
+
+        etiTelimon.setForeground(new java.awt.Color(255, 255, 255));
+        etiTelimon.setText("Te de limon");
+        getContentPane().add(etiTelimon, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 90, 20));
+
+        precPizzaNapolitana10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        precPizzaNapolitana10.setForeground(new java.awt.Color(255, 255, 255));
+        precPizzaNapolitana10.setText("12000");
+        getContentPane().add(precPizzaNapolitana10, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 360, 40, 20));
+
+        signoPrecio10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        signoPrecio10.setForeground(new java.awt.Color(255, 255, 255));
+        signoPrecio10.setText("...$");
+        getContentPane().add(signoPrecio10, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 360, -1, 20));
+
+        etiFctura.setBackground(new java.awt.Color(153, 255, 153));
+        etiFctura.setText("Factura");
+        getContentPane().add(etiFctura, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 610, -1, -1));
+
+        etiFondo.setForeground(new java.awt.Color(153, 255, 153));
+        getContentPane().add(etiFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -116,15 +309,54 @@ public final class MenuRestaurante extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel AguaCristal;
-    private javax.swing.JLabel PastasBolognesa;
+    private javax.swing.JLabel PizzaBoscaiola;
+    private javax.swing.JLabel PizzaCapricciosa;
+    private javax.swing.JLabel PizzaFruttidimare;
+    private javax.swing.JLabel PizzaMargherita;
     private javax.swing.JLabel PizzaNapolitana;
     private javax.swing.JLabel etiAgua;
+    private javax.swing.JLabel etiAguamineral;
+    private javax.swing.JLabel etiCocala;
+    private javax.swing.JButton etiFctura;
+    private javax.swing.JLabel etiFondo;
+    private javax.swing.JLabel etiImangenBebidas;
+    private javax.swing.JLabel etiLimonada;
+    private javax.swing.JLabel etiPepsi;
     private javax.swing.JLabel etiPizza;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel etiTelimon;
     private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JSpinner jSpinner10;
+    private javax.swing.JSpinner jSpinner11;
+    private javax.swing.JSpinner jSpinner12;
     private javax.swing.JSpinner jSpinner2;
-    private javax.swing.JSpinner jSpinner3;
+    private javax.swing.JSpinner jSpinner4;
+    private javax.swing.JSpinner jSpinner5;
+    private javax.swing.JSpinner jSpinner6;
+    private javax.swing.JSpinner jSpinner7;
+    private javax.swing.JSpinner jSpinner8;
+    private javax.swing.JSpinner jSpinner9;
+    private javax.swing.JLabel precPizzaBoscaiola;
+    private javax.swing.JLabel precPizzaCapricciosa;
+    private javax.swing.JLabel precPizzaFruttidimare;
+    private javax.swing.JLabel precPizzaMargherita;
+    private javax.swing.JLabel precPizzaNapolitana;
+    private javax.swing.JLabel precPizzaNapolitana10;
+    private javax.swing.JLabel precPizzaNapolitana5;
+    private javax.swing.JLabel precPizzaNapolitana6;
+    private javax.swing.JLabel precPizzaNapolitana7;
+    private javax.swing.JLabel precPizzaNapolitana8;
+    private javax.swing.JLabel precPizzaNapolitana9;
+    private javax.swing.JLabel signoPrecio;
+    private javax.swing.JLabel signoPrecio1;
+    private javax.swing.JLabel signoPrecio10;
+    private javax.swing.JLabel signoPrecio2;
+    private javax.swing.JLabel signoPrecio3;
+    private javax.swing.JLabel signoPrecio4;
+    private javax.swing.JLabel signoPrecio5;
+    private javax.swing.JLabel signoPrecio6;
+    private javax.swing.JLabel signoPrecio7;
+    private javax.swing.JLabel signoPrecio8;
+    private javax.swing.JLabel signoPrecio9;
     // End of variables declaration//GEN-END:variables
 
     
