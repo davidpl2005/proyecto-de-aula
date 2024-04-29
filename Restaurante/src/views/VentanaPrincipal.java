@@ -117,11 +117,12 @@ public VentanaPrincipal() {
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
-        // TODO add your handling code here:
         
-         
-
-            
+    MenuRestaurante menu = new MenuRestaurante();
+        
+        menu.setLocationRelativeTo(null);
+        menu.setVisible(true);
+        
     }//GEN-LAST:event_btnSiguienteActionPerformed
     
     public void SetImageLabel(JLabel nombrelabel, String root){
