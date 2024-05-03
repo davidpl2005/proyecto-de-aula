@@ -13,20 +13,16 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Usuario
+ * @author Alvaro
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
 
-    /**
-     * Creates new form VentanaPrincipal
-     */
-    
-    public VentanaPrincipal() {
+public VentanaPrincipal() {
         initComponents();
-        this.setLocationRelativeTo(this);
+        
         SetImageLabel(etiImagen, "src/imagenes/comida italiana.jpg");
     }
-
+   
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -49,7 +45,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         etiImagen = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Restaurante");
+        setTitle("Bambino");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         bienvenida.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -72,6 +68,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         btnSiguiente.setBackground(new java.awt.Color(153, 255, 153));
         btnSiguiente.setText("Siguiente");
+        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguienteActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 290, -1, -1));
 
         btnGuardar.setText("Guardar");
@@ -114,6 +115,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         textMensaje.setText("Sr(a) "+nombre+"\nEstamos muy felices de atenderlo(a) el día de hoy.\n" +"\nNumero de identificación del cliente: "+documento);
         etiMensaje2.setText("Registro realizado con exito");
     }//GEN-LAST:event_btnGuardarActionPerformed
+
+    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
+        
+    MenuRestaurante menu = new MenuRestaurante();
+        
+        menu.setLocationRelativeTo(null);
+        menu.setVisible(true);
+        
+    }//GEN-LAST:event_btnSiguienteActionPerformed
     
     public void SetImageLabel(JLabel nombrelabel, String root){
         ImageIcon imagen = new ImageIcon(root); 
