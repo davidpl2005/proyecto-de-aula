@@ -101,7 +101,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         String nombre = nombreText.getText();
         String documento = documentoText.getText();
-        if(!validarCaracteres(nombre) || nombre.charAt(0)==' ' || nombre.isEmpty()){
+        if(nombre.isEmpty() || !validarCaracteres(nombre) || nombre.charAt(0)==' '){
             JOptionPane.showMessageDialog(null,"Nombre invalido.");
             return;
         }
@@ -120,7 +120,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         Icon icon = new ImageIcon(
                 imagen.getImage().getScaledInstance(nombrelabel.getWidth(), nombrelabel.getHeight(), Image.SCALE_DEFAULT));
         nombrelabel.setIcon(icon);
-        this.repaint();
     }
     public static boolean validarCaracteres(String datos){
         return datos.matches("[a-z A-Z]*");
