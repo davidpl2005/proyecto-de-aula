@@ -1,5 +1,5 @@
 
-package views;
+package co.edu.unicolombo.pb.proaula.views;
 
 import java.awt.Image;
 import javax.swing.Icon;
@@ -15,6 +15,8 @@ public final class MenuRestaurante extends javax.swing.JFrame {
     /**
      * Creates new form MenuRestaurante
      */
+    VentanaPrincipal ventanaPrincipal;
+    
     public MenuRestaurante() {
         initComponents();
          SetImageLabel(etiPizza,"src/imagenes/pizza.jpeg");
@@ -82,6 +84,7 @@ public final class MenuRestaurante extends javax.swing.JFrame {
         precioteLimon = new javax.swing.JLabel();
         signoPrecio10 = new javax.swing.JLabel();
         botonFactura = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
         etiFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -268,7 +271,15 @@ public final class MenuRestaurante extends javax.swing.JFrame {
                 botonFacturaActionPerformed(evt);
             }
         });
-        getContentPane().add(botonFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 610, -1, -1));
+        getContentPane().add(botonFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 610, -1, -1));
+
+        btnVolver.setText("<<");
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVolverActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 610, -1, -1));
 
         etiFondo.setForeground(new java.awt.Color(153, 255, 153));
         getContentPane().add(etiFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 720));
@@ -288,6 +299,12 @@ cuenta.setVisible(true);
     private void cantidadMaragritaStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_cantidadMaragritaStateChanged
 
     }//GEN-LAST:event_cantidadMaragritaStateChanged
+
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
+        // TODO add your handling code here:
+        
+            
+    }//GEN-LAST:event_btnVolverActionPerformed
 
     public void SetImageLabel(JLabel nombrelabel, String root){
         ImageIcon imagen = new ImageIcon(root); 
@@ -338,6 +355,7 @@ cuenta.setVisible(true);
     private javax.swing.JLabel PizzaMargherita;
     private javax.swing.JLabel PizzaNapolitana;
     private javax.swing.JButton botonFactura;
+    private javax.swing.JButton btnVolver;
     private javax.swing.JSpinner cantidadAgua;
     private javax.swing.JSpinner cantidadAguamineral;
     private javax.swing.JSpinner cantidadBoscaiola;

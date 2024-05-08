@@ -1,7 +1,7 @@
 
-package restaurante;
+package co.edu.unicolombo.pb.proaula;
 
-import views.VentanaPrincipal;
+import co.edu.unicolombo.pb.proaula.views.VentanaPrincipal;
 
 
 

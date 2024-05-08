@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package views;
+package co.edu.unicolombo.pb.proaula.views;
 
+import co.edu.unicolombo.pb.proaula.conceptos.Cliente;
 import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -13,7 +14,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Alvaro
+ * @author Usuario
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
 
@@ -100,26 +101,27 @@ public VentanaPrincipal() {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        String nombre = nombreText.getText();
-        String documento = documentoText.getText();
-        if(nombre.isEmpty() || !validarCaracteres(nombre) || nombre.charAt(0)==' '){
+        Cliente.nombre = nombreText.getText();
+        Cliente.documento = documentoText.getText();
+        if(Cliente.nombre.isEmpty() || !validarCaracteres(Cliente.nombre) || Cliente.nombre.charAt(0)==' '){
             JOptionPane.showMessageDialog(null,"Nombre invalido.");
             return;
         }
         
-        if(!validarNumeros(documento) || documento.isEmpty()){
+        if(!validarNumeros(Cliente.documento) || Cliente.documento.isEmpty()){
             JOptionPane.showMessageDialog(null, "Número de documento invalido.");
             return;
         }
         
-        textMensaje.setText("Sr(a) "+nombre+"\nEstamos muy felices de atenderlo(a) el día de hoy.\n" +"\nNumero de identificación del cliente: "+documento);
+        textMensaje.setText("Sr(a) "+Cliente.nombre+"\nEstamos muy felices de atenderlo(a) el día de hoy.\n" +"\nNumero de identificación del cliente: "+Cliente.documento);
         etiMensaje2.setText("Registro realizado con exito");
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
         
     MenuRestaurante menu = new MenuRestaurante();
-        
+    
+            this.setVisible(false);
         menu.setLocationRelativeTo(null);
         menu.setVisible(true);
         
@@ -163,6 +165,9 @@ public VentanaPrincipal() {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
