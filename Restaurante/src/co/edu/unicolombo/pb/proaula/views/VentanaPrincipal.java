@@ -6,6 +6,8 @@ package co.edu.unicolombo.pb.proaula.views;
 
 import co.edu.unicolombo.pb.proaula.conceptos.Cliente;
 import java.awt.Image;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -20,8 +22,20 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
 public VentanaPrincipal() {
         initComponents();
+        btnSiguiente.setEnabled(false);
         
-        SetImageLabel(etiImagen, "src/imagenes/comida italiana.jpg");
+        
+        this.addComponentListener(new ComponentAdapter() {
+            @Override
+    public void componentResized(ComponentEvent e) {
+       
+        ImageIcon icono = new ImageIcon("src/imagenes/comida italiana.jpg");
+        Image imagen = icono.getImage().getScaledInstance(getWidth(), getHeight(), Image.SCALE_SMOOTH);
+        
+        // Establecer la imagen escalada en el JLabel
+        etiImagen.setIcon(new ImageIcon(imagen));
+    }
+});
     }
    
     /**
@@ -59,7 +73,19 @@ public VentanaPrincipal() {
         etiNombre.setForeground(new java.awt.Color(255, 255, 255));
         etiNombre.setText("Nombre completo:");
         getContentPane().add(etiNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 107, 24));
+
+        nombreText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nombreTextActionPerformed(evt);
+            }
+        });
         getContentPane().add(nombreText, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 218, 31));
+
+        documentoText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                documentoTextActionPerformed(evt);
+            }
+        });
         getContentPane().add(documentoText, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 218, 31));
 
         etiDocumento.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -115,6 +141,8 @@ public VentanaPrincipal() {
         
         textMensaje.setText("Sr(a) "+Cliente.nombre+"\nEstamos muy felices de atenderlo(a) el día de hoy.\n" +"\nNumero de identificación del cliente: "+Cliente.documento);
         etiMensaje2.setText("Registro realizado con exito");
+        
+        btnSiguiente.setEnabled(true);
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
@@ -126,20 +154,27 @@ public VentanaPrincipal() {
         menu.setVisible(true);
         
     }//GEN-LAST:event_btnSiguienteActionPerformed
+
+    private void nombreTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreTextActionPerformed
+        // TODO add your handling code here:
+        documentoText.requestFocus();
+    }//GEN-LAST:event_nombreTextActionPerformed
+
+    private void documentoTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_documentoTextActionPerformed
+        // TODO add your handling code here:
+        btnGuardar.doClick();
+    }//GEN-LAST:event_documentoTextActionPerformed
     
-    public void SetImageLabel(JLabel nombrelabel, String root){
-        ImageIcon imagen = new ImageIcon(root); 
-        Icon icon = new ImageIcon(
-                imagen.getImage().getScaledInstance(nombrelabel.getWidth(), nombrelabel.getHeight(), Image.SCALE_DEFAULT));
-        nombrelabel.setIcon(icon);
-    }
+    
     public static boolean validarCaracteres(String datos){
         return datos.matches("[a-z A-Z]*");
     }
     public static boolean validarNumeros(String datos){
         return datos.matches("[0-9]*");
     }
-    
+   
+// Agrega un ComponentListener a tu JFrame para detectar cambios de tamaño
+
     /**
      * @param args the command line arguments
      */
