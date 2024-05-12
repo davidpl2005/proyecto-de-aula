@@ -151,10 +151,8 @@ public final class MenuRestaurante extends javax.swing.JFrame {
         precioPizzaChampiñones.setForeground(new java.awt.Color(255, 255, 255));
         precioPizzaChampiñones.setText("29000");
         getContentPane().add(precioPizzaChampiñones, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 610, -1, -1));
-<<<<<<< HEAD
-=======
+        
         getContentPane().add(etiFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 1100, 720));
->>>>>>> 13bff20e4ba3f6f303326cd7fff705ccc70dec64
 
         jButton1.setBackground(new java.awt.Color(153, 255, 153));
         jButton1.setText("Factura");
