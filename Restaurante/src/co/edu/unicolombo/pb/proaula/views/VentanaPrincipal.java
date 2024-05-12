@@ -30,11 +30,11 @@ public VentanaPrincipal() {
         initComponents();
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
-    // Calcular la ubicación para centrar la ventana
+    
     int x = (int) ((screenSize.getWidth() - this.getWidth()) / 2);
     int y = (int) ((screenSize.getHeight() - this.getHeight()) / 2);
 
-    // Establecer la ubicación de la ventana para que aparezca centrada
+    
     this.setLocation(x, y);
         btnSiguiente.setEnabled(false);
         SetImageLabel(etiImagen, "src/imagenes/comida italiana.jpg");

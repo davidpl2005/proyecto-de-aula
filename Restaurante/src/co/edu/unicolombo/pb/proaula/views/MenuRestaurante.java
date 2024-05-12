@@ -15,7 +15,6 @@ public final class MenuRestaurante extends javax.swing.JFrame {
     /**
      * Creates new form MenuRestaurante
      */
-    VentanaPrincipal ventanaPrincipal;
     
     public MenuRestaurante() {
         initComponents();
