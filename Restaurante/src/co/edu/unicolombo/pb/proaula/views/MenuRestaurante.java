@@ -106,12 +106,9 @@ public final class MenuRestaurante extends javax.swing.JFrame {
         cantidadVino = new javax.swing.JTextField();
         cantidadAguaMineral = new javax.swing.JTextField();
         botonFactura = new javax.swing.JButton();
-<<<<<<< HEAD
         btnVolver = new javax.swing.JButton();
-=======
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
->>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
         etiFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -201,8 +198,6 @@ public final class MenuRestaurante extends javax.swing.JFrame {
         getContentPane().add(cantidadPizzaPepperoni, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 570, 40, -1));
         getContentPane().add(cantidadPizzaChampiñones, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 610, 40, -1));
         getContentPane().add(etiImagenPastas, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 210, 210, 130));
-<<<<<<< HEAD
-
         etiProductoPasta.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         etiProductoPasta.setForeground(new java.awt.Color(255, 255, 255));
         etiProductoPasta.setText("Producto:");
@@ -383,8 +378,6 @@ public final class MenuRestaurante extends javax.swing.JFrame {
         });
         getContentPane().add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 670, -1, 30));
         getContentPane().add(etiFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 720));
-=======
-
         etiProductoPasta.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         etiProductoPasta.setForeground(new java.awt.Color(255, 255, 255));
         etiProductoPasta.setText("Producto:");
@@ -572,8 +565,6 @@ public final class MenuRestaurante extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 660, -1, -1));
         getContentPane().add(etiFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 1100, 720));
->>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -769,24 +760,18 @@ public final class MenuRestaurante extends javax.swing.JFrame {
     JOptionPane.showMessageDialog(this, mensaje.toString(), "Resumen de la Orden",JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_botonFacturaActionPerformed
 
-<<<<<<< HEAD
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
-=======
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
->>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
         // TODO add your handling code here:
         VentanaPrincipal ventana = new VentanaPrincipal();
         ventana.setVisible(true);
         this.dispose();
-<<<<<<< HEAD
     }//GEN-LAST:event_btnVolverActionPerformed
 
     
-=======
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
-
->>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
     public void SetImageLabel(JLabel nombrelabel, String root){
         ImageIcon imagen = new ImageIcon(root); 
         Icon icon = new ImageIcon(
@@ -831,10 +816,7 @@ public final class MenuRestaurante extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botonFactura;
-<<<<<<< HEAD
     private javax.swing.JButton btnVolver;
-=======
->>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
     private javax.swing.JRadioButton butonAgua;
     private javax.swing.JRadioButton butonAguaMineral;
     private javax.swing.JRadioButton butonCoca;
@@ -895,11 +877,8 @@ public final class MenuRestaurante extends javax.swing.JFrame {
     private javax.swing.JLabel precioPastaCarbonara;
     private javax.swing.JLabel precioPastaMarinera;
     private javax.swing.JLabel precioPastaPesto;
-<<<<<<< HEAD
-=======
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
->>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
     private javax.swing.JLabel precioPizzaCapricciosa;
     private javax.swing.JLabel precioPizzaChampiñones;
     private javax.swing.JLabel precioPizzaHawaiana;
