@@ -55,7 +55,6 @@ public final class MenuRestaurante extends javax.swing.JFrame {
         precioPizzaHawaiana = new javax.swing.JLabel();
         precioPizzaPepperoni = new javax.swing.JLabel();
         precioPizzaChampiñones = new javax.swing.JLabel();
-<<<<<<< HEAD
         cantidadPizzaNapolitana = new javax.swing.JTextField();
         cantidadPizzaMargarita = new javax.swing.JTextField();
         cantidadPizzaCapricciosa = new javax.swing.JTextField();
@@ -107,10 +106,8 @@ public final class MenuRestaurante extends javax.swing.JFrame {
         cantidadVino = new javax.swing.JTextField();
         cantidadAguaMineral = new javax.swing.JTextField();
         botonFactura = new javax.swing.JButton();
-=======
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
->>>>>>> 77992510917e9fcec59deeb4d73f013300feb1f6
         etiFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -193,7 +190,6 @@ public final class MenuRestaurante extends javax.swing.JFrame {
         precioPizzaChampiñones.setForeground(new java.awt.Color(255, 255, 255));
         precioPizzaChampiñones.setText("29000");
         getContentPane().add(precioPizzaChampiñones, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 610, -1, -1));
-<<<<<<< HEAD
         getContentPane().add(cantidadPizzaNapolitana, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 410, 40, -1));
         getContentPane().add(cantidadPizzaMargarita, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 450, 40, -1));
         getContentPane().add(cantidadPizzaCapricciosa, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 490, 40, -1));
@@ -374,7 +370,6 @@ public final class MenuRestaurante extends javax.swing.JFrame {
         });
         getContentPane().add(botonFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 680, -1, -1));
         getContentPane().add(etiFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 720));
-=======
         
         getContentPane().add(etiFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 1100, 720));
 
@@ -390,7 +385,6 @@ public final class MenuRestaurante extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 660, -1, -1));
         getContentPane().add(etiFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 1100, 720));
->>>>>>> 77992510917e9fcec59deeb4d73f013300feb1f6
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -688,7 +682,6 @@ public final class MenuRestaurante extends javax.swing.JFrame {
     private javax.swing.JLabel etiProductoBebida;
     private javax.swing.JLabel etiProductoPasta;
     private javax.swing.JLabel etiProductoPizza;
-<<<<<<< HEAD
     private javax.swing.JLabel precioAgua;
     private javax.swing.JLabel precioAguaMineral;
     private javax.swing.JLabel precioCoca;
@@ -700,10 +693,8 @@ public final class MenuRestaurante extends javax.swing.JFrame {
     private javax.swing.JLabel precioPastaCarbonara;
     private javax.swing.JLabel precioPastaMarinera;
     private javax.swing.JLabel precioPastaPesto;
-=======
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
->>>>>>> 77992510917e9fcec59deeb4d73f013300feb1f6
     private javax.swing.JLabel precioPizzaCapricciosa;
     private javax.swing.JLabel precioPizzaChampiñones;
     private javax.swing.JLabel precioPizzaHawaiana;
