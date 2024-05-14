@@ -8,10 +8,18 @@ import co.edu.unicolombo.pb.proaula.conceptos.Cliente;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Toolkit;
+<<<<<<< HEAD
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import javax.swing.Icon;
+=======
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+>>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -22,9 +30,12 @@ import javax.swing.JOptionPane;
  * @author Usuario
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
+    
+    String[] documento;
 
 public VentanaPrincipal() {
         initComponents();
+<<<<<<< HEAD
         
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int x = (int) ((screenSize.getWidth() - this.getWidth()) / 2);
@@ -33,7 +44,20 @@ public VentanaPrincipal() {
     this.setLocation(x, y);
         btnSiguiente.setEnabled(false);
         
+=======
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+
+    // Calcular la ubicación para centrar la ventana
+    int x = (int) ((screenSize.getWidth() - this.getWidth()) / 2);
+    int y = (int) ((screenSize.getHeight() - this.getHeight()) / 2);
+
+    // Establecer la ubicación de la ventana para que aparezca centrada
+    this.setLocation(x, y);
+        btnSiguiente.setEnabled(false);
+>>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
         SetImageLabel(etiImagen, "src/imagenes/comida italiana.jpg");
+        
+        
     }
    
     /**
@@ -62,15 +86,20 @@ public VentanaPrincipal() {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        bienvenida.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        bienvenida.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 28)); // NOI18N
         bienvenida.setForeground(new java.awt.Color(255, 255, 255));
         bienvenida.setText("Registro del cliente");
         bienvenida.setAlignmentX(0.5F);
+<<<<<<< HEAD
         getContentPane().add(bienvenida, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, -1, -1));
+=======
+        getContentPane().add(bienvenida, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 70, -1, -1));
+>>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
 
-        etiNombre.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        etiNombre.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         etiNombre.setForeground(new java.awt.Color(255, 255, 255));
         etiNombre.setText("Nombre completo:");
+<<<<<<< HEAD
         getContentPane().add(etiNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 107, 24));
 
         nombreText.addActionListener(new java.awt.event.ActionListener() {
@@ -86,11 +115,32 @@ public VentanaPrincipal() {
             }
         });
         getContentPane().add(documentoText, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 218, 31));
+=======
+        getContentPane().add(etiNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 160, 24));
+>>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
 
-        etiDocumento.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        nombreText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nombreTextActionPerformed(evt);
+            }
+        });
+        getContentPane().add(nombreText, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 218, 31));
+
+        documentoText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                documentoTextActionPerformed(evt);
+            }
+        });
+        getContentPane().add(documentoText, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, 218, 31));
+
+        etiDocumento.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         etiDocumento.setForeground(new java.awt.Color(255, 255, 255));
         etiDocumento.setText("Número documento:");
+<<<<<<< HEAD
         getContentPane().add(etiDocumento, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 126, 24));
+=======
+        getContentPane().add(etiDocumento, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 180, 24));
+>>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
 
         btnSiguiente.setBackground(new java.awt.Color(153, 255, 153));
         btnSiguiente.setText("Siguiente");
@@ -99,7 +149,11 @@ public VentanaPrincipal() {
                 btnSiguienteActionPerformed(evt);
             }
         });
+<<<<<<< HEAD
         getContentPane().add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 280, -1, -1));
+=======
+        getContentPane().add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 280, -1, -1));
+>>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
 
         btnGuardar.setText("Guardar");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
@@ -107,11 +161,19 @@ public VentanaPrincipal() {
                 btnGuardarActionPerformed(evt);
             }
         });
+<<<<<<< HEAD
         getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, -1, -1));
 
         etiMensaje2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         etiMensaje2.setForeground(new java.awt.Color(255, 255, 255));
         getContentPane().add(etiMensaje2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 440, 198, 25));
+=======
+        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, -1, -1));
+
+        etiMensaje2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        etiMensaje2.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(etiMensaje2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, 198, 25));
+>>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
 
         textMensaje.setEditable(false);
         textMensaje.setColumns(20);
@@ -119,8 +181,15 @@ public VentanaPrincipal() {
         textMensaje.setBorder(null);
         jScrollPane1.setViewportView(textMensaje);
 
+<<<<<<< HEAD
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 326, 92));
         getContentPane().add(etiImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 560));
+=======
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 330, 326, 92));
+
+        etiImagen.setPreferredSize(new java.awt.Dimension(550, 400));
+        getContentPane().add(etiImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 560));
+>>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -140,7 +209,13 @@ public VentanaPrincipal() {
         
         textMensaje.setText("Sr(a) "+Cliente.nombre+"\nEstamos muy felices de atenderlo(a) el día de hoy.\n" +"\nNumero de identificación del cliente: "+Cliente.documento);
         etiMensaje2.setText("Registro realizado con exito");
+<<<<<<< HEAD
         btnSiguiente.setEnabled(true);
+=======
+        
+        btnSiguiente.setEnabled(true);
+        
+>>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
         try {
         BufferedWriter writer = new BufferedWriter(new FileWriter("Datos.txt", true));
         writer.write("DATOS CLIENTE");
@@ -167,18 +242,38 @@ public VentanaPrincipal() {
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
     private void nombreTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreTextActionPerformed
+<<<<<<< HEAD
      documentoText.requestFocus();
     }//GEN-LAST:event_nombreTextActionPerformed
 
     private void documentoTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_documentoTextActionPerformed
     btnGuardar.doClick();
+=======
+        // TODO add your handling code here:
+                documentoText.requestFocus();
+    }//GEN-LAST:event_nombreTextActionPerformed
+
+    private void documentoTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_documentoTextActionPerformed
+        // TODO add your handling code here:
+                btnGuardar.doClick();
+>>>>>>> f85604225e10e98b11d10938d9c3cbe838c4932e
     }//GEN-LAST:event_documentoTextActionPerformed
     
     public void SetImageLabel(JLabel nombrelabel, String root){
-        ImageIcon imagen = new ImageIcon(root); 
-        Icon icon = new ImageIcon(
-                imagen.getImage().getScaledInstance(nombrelabel.getWidth(), nombrelabel.getHeight(), Image.SCALE_DEFAULT));
-        nombrelabel.setIcon(icon);
+        
+    this.addComponentListener(new ComponentAdapter() {
+    @Override
+    public void componentResized(ComponentEvent e) {
+       
+        ImageIcon icono = new ImageIcon(root);
+        Image imagen = icono.getImage().getScaledInstance(getWidth(), getHeight(), Image.SCALE_SMOOTH);
+        
+        
+        nombrelabel.setBounds(0,0,getWidth(), getHeight());
+        nombrelabel.setIcon(new ImageIcon(imagen));
+    }
+});
+
     }
     public static boolean validarCaracteres(String datos){
         return datos.matches("[a-z A-Z]*");
