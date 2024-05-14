@@ -168,11 +168,7 @@ public VentanaPrincipal() {
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
         
-    MenuRestaurante menu = new MenuRestaurante();
     
-            this.setVisible(false);
-        menu.setLocationRelativeTo(null);
-        menu.setVisible(true);
         
     }//GEN-LAST:event_btnSiguienteActionPerformed
 

@@ -1,0 +1,10 @@
+DATOS CLIENTE
+
+Nombre: Luis
+Documento: 123123
+
+DATOS CLIENTE
+
+Nombre: sdfb
+Documento: 132432
+
