@@ -1,5 +1,6 @@
 DATOS CLIENTE
 
+<<<<<<< HEAD
 Nombre: Luis
 Documento: 123123
 
@@ -7,4 +8,23 @@ DATOS CLIENTE
 
 Nombre: sdfb
 Documento: 132432
+=======
+Nombre: ejggegu
+Documento: 112222
+
+DATOS CLIENTE
+
+Nombre: tdtsss
+Documento: 333333
+
+DATOS CLIENTE
+
+Nombre: tdtsss
+Documento: 333333
+
+DATOS CLIENTE
+
+Nombre: dtee
+Documento: 66666
+>>>>>>> 07b9041c8c6595dca513d5fae20f076042579945
 
